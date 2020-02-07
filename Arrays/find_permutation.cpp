@@ -44,3 +44,23 @@ vector<int> Solution::findPerm(const string A, int B) {
     }
     return ans;
 }
+
+
+// Solution by reversing the subarray
+vector<int> Solution::findPerm(const string A, int B) {
+    int n = A.size();
+    vector<int> res(n+1);
+    for(int i=1;i<=n+1;++i)
+        res[i-1] = i;
+    
+    int i = 0;
+    while(i<n){
+        if(A[i]=='I') ++i;
+        else{
+            int j = i;
+            while(i<n && A[i]=='D') ++i;
+            reverse(res.begin()+j, res.begin()+i+1);
+        }
+    }
+    return res;
+}
