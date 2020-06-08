@@ -45,3 +45,22 @@ int Solution::firstMissingPositive(vector<int> &A) {
     }
     return n+1; // if all numbers between given range exists
 }
+
+// 2nd solution fails for the case when A = {INT_MAX}
+
+// 3rd solution from leetcode article
+// https://leetcode.com/problems/first-missing-positive/discuss/17071/My-short-c%2B%2B-solution-O(1)-space-and-O(n)-time
+
+int Solution::firstMissingPositive(vector<int> &A) {
+    int n = A.size();
+    
+    for(int i=0;i<A.size();++i){
+        while(A[i]>=0 && A[i]<=n && A[i]!=A[A[i]-1])
+            swap(A[i], A[A[i]-1]);
+    }
+    
+    for(int i=0;i<n;++i){
+        if(A[i]!=i+1) return i+1;
+    }
+    return n+1;
+}
