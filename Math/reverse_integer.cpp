@@ -15,6 +15,6 @@ int Solution::reverse(int A) {
     }
     
     if(neg) rev = -rev;
-    if(rev>=INT_MIN && rev<+INT_MAX) return rev;
+    if(rev>=INT_MIN && rev<=INT_MAX) return rev;
     return 0;
 }
