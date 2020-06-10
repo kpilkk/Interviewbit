@@ -1,0 +1,12 @@
+// https://www.interviewbit.com/problems/trailing-zeros-in-factorial/
+
+int Solution::trailingZeroes(int A) {
+    if(A<5) return 0;
+    
+    int ans = 0;
+    while(A>=5){
+        ans += (A/5);
+        A /= 5;
+    }
+    return ans;
+}
