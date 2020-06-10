@@ -25,3 +25,22 @@ int Solution::hammingDistance(const vector<int> &A) {
     }
     return (ans*2)%mod;
 }
+
+// 2nd solution working
+
+
+
+int Solution::hammingDistance(const vector<int> &A) {
+    int n = A.size();
+
+    long long ans = 0;
+    for(int i=0;i<32;++i){
+        int count = 0;
+        for(int j=0;j<n;++j)
+            if(A[j]&(1<<i)) ++count;
+
+        ans += (2*(long long)count*(n-count));
+    }
+    return ans%1000000007;
+}
+
