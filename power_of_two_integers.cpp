@@ -1,0 +1,25 @@
+// https://www.interviewbit.com/problems/power-of-two-integers/
+
+// 1st solution
+int Solution::isPower(int A) {
+    if(A==1) return 1;
+    for(int i=2;i<=sqrt(A);++i){
+        int n = log(A)/log(i);
+        if(pow(i,n) == A) return 1;
+    }
+    return 0;
+}
+
+// 2nd solution
+
+int Solution::isPower(int A) {
+    if(A==1) return 1;
+
+    float p;
+    for(int i=2;i<=sqrt(A);++i){
+        p = log(A)/log(i);
+        if((ceil(p)==floor(p)) && p > 1)
+            return 1;
+    }
+    return 0;
+}
