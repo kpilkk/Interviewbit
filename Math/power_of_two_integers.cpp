@@ -23,3 +23,21 @@ int Solution::isPower(int A) {
     }
     return 0;
 }
+
+// 3rd solution
+// Memory Limit Exceeded
+
+int Solution::isPower(int A) {
+    vector<bool> sieve(A+1, false);
+    
+    sieve[1] = true;
+    
+    for(int i=2;i<=A;++i){
+        if(!sieve[i]){
+            for(int j=i*i;j<=A;j*=i){
+                sieve[j] = true;
+            }
+        }
+    }
+    return sieve[A];
+}
