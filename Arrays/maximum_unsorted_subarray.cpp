@@ -61,3 +61,49 @@ vector<int> Solution::subUnsort(vector<int> &A){
 	ans.push_back(r);
 	return ans;
 }
+
+// 3rd solution -- same approach as above but quite different
+vector<int> Solution::subUnsort(vector<int> &A) {
+    int n=A.size();
+
+    int left=-1, right=-1;
+    for(int i=0;i<n-1;i++){
+        if(A[i]>A[i+1]){
+            left=i;
+            break;
+        }
+    }
+    
+    if(left==-1)
+        return {-1};
+    
+    for(int i=n-1;i>0;i--){
+        if(A[i]<A[i-1]){
+            right=i;
+            break;
+        }
+    }
+
+    int minm=A[left],maxm=A[left];
+    for(int i=left+1;i<=right;i++){
+        if(A[i]<minm)
+            minm=A[i];
+        else if(A[i]>maxm)
+            maxm=A[i];
+    }
+    
+    for(int i=0;i<left;i++){
+        if(A[i]>minm){
+         left=i;
+         break;
+        }
+    }
+    for(int i=n-1;i>right;i--){
+        if(A[i]<maxm){
+         right=i;
+         break;
+        }
+    }
+
+    return {left, right};
+}
