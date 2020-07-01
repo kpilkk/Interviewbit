@@ -2,24 +2,32 @@
 
 // Using binary search
 int Solution::findCount(const vector<int> &A, int B) {
+    int count = 0;
     int n = A.size();
-    
-    int i=0, j=n-1;
-    while(i<j){
-        int mid =i+(j-i)/2;
-        if(A[mid]<B) i=mid+1;
-        else j = mid;
-    }
-    if(A[i]!=B) return 0;
-    int start = i;
+    int l=0, r=n-1;
+    int x = -1;
 
-    j = n-1;
-    while(i<j){
-        int mid = i+(j-i)/2+1; // biased to the right
-        if(A[mid]>B) j = mid-1;
-        else i = mid;  // / So that this won't make the search range stuck
+    while(l<=r){
+        int mid = l+(r-l)/2;
+        if(A[mid]==B){
+            x = mid;
+            break;
+        }
+        if(A[mid]<B) l=mid+1;
+        else r=mid-1;
     }
-    int end = j;
     
-    return end-start+1;
+    if(x!=-1){
+        int i = x;
+        while(A[i]==B && i>=0){
+            ++count;
+            --i;
+        }
+        i = x+1;
+        while(A[i]==B && i<n){
+            ++count;
+            ++i;
+        }
+    }
+    return count;
 }
