@@ -10,6 +10,9 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
+
+// Recursion
+
 void inorder(TreeNode* A, vector<int>& ans){
     if(A!=NULL){
         inorder(A->left, ans);
@@ -22,5 +25,35 @@ vector<int> Solution::inorderTraversal(TreeNode* A) {
     vector<int> ans;
     
     inorder(A, ans);
+    return ans;
+}
+
+// Morris Traversal
+
+vector<int> Solution::inorderTraversal(TreeNode* A) {
+    vector<int> ans;
+    
+    TreeNode* pre = NULL;
+    while(A != NULL){
+        if(A->left == NULL){
+            ans.push_back(A->val);
+            A = A->right;
+        }
+        else{
+            pre = A->left;
+            while(pre->right != NULL && pre->right != A){
+                pre = pre->right;
+            }
+            if(pre->right == NULL){
+                pre->right = A;
+                A = A->left;
+            }
+            else{
+                pre->right = NULL;
+                ans.push_back(A->val);
+                A = A->right;
+            }
+        }
+    }
     return ans;
 }
