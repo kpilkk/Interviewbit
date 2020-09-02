@@ -57,3 +57,22 @@ vector<int> Solution::inorderTraversal(TreeNode* A) {
     }
     return ans;
 }
+
+// Uisng Stack
+
+vector<int> Solution::inorderTraversal(TreeNode* A) {
+    vector<int> ans;
+    stack<TreeNode*> temp;
+    
+    while(A || !temp.empty()){
+        while(A){
+            temp.emplace(A);
+            A = A->left;
+        }
+        A = temp.top();
+        temp.pop();
+        ans.push_back(A->val);
+        A = A->right;
+    }
+    return ans;
+}
