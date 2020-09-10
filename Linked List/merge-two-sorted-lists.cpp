@@ -9,7 +9,7 @@
  * };
  */
 
-// Iterative solution using O(1) extra space
+// Iterative solution using constant extra space
 ListNode* Solution::mergeTwoLists(ListNode* A, ListNode* B) {
     ListNode* ans = new ListNode(0);
     ListNode* dummy = ans;
