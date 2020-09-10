@@ -1,7 +1,5 @@
 // https://www.interviewbit.com/problems/merge-two-sorted-lists/
 
-// Using recursion
-
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -10,6 +8,30 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+
+// Iterative solution using O(1) extra space
+ListNode* Solution::mergeTwoLists(ListNode* A, ListNode* B) {
+    ListNode* ans = new ListNode(0);
+    ListNode* dummy = ans;
+    
+    while(A && B){
+        if(A -> val < B -> val){
+            ans -> next = A;
+            A = A -> next;
+        }
+        else{
+            ans -> next = B;
+            B = B -> next;
+        }
+        ans = ans -> next;
+    }
+    
+    ans -> next = A ? A : B;
+    return dummy -> next;
+}
+
+// Using Recursion
+
 ListNode* Solution::mergeTwoLists(ListNode* A, ListNode* B) {
     if(A == NULL) return B;
     if(B == NULL) return A;
