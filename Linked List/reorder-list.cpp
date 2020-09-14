@@ -39,3 +39,43 @@ ListNode* Solution::reorderList(ListNode* A) {
     }
     return A;
 }
+
+
+// Breaking the linked list in the middle and then doing same as above
+ListNode* Solution::reorderList(ListNode* A) {
+    if(!A || !A->next || !A->next->next)
+        return A;
+        
+    ListNode *slowp = A, *fastp = A->next;
+    
+    while(fastp && fastp->next){
+        slowp = slowp->next;
+        fastp = fastp->next->next;
+    }
+    
+    fastp = slowp->next;
+    slowp->next = NULL;
+    
+    ListNode *prev = NULL, *Next = NULL;
+    while(fastp){
+        Next = fastp->next;
+        fastp->next = prev;
+        prev = fastp;
+        fastp = Next;
+    }
+    
+    ListNode *temp = prev;
+    slowp = A;
+    ListNode *slowp_next = NULL, *temp_next = NULL;
+    while(slowp && temp){
+        slowp_next = slowp->next;
+        temp_next = temp->next;
+        
+        temp->next = slowp_next;
+        slowp->next = temp;
+        
+        slowp = slowp_next;
+        temp = temp_next;
+    }
+    return A;
+}
