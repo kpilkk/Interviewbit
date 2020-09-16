@@ -1,5 +1,17 @@
 // https://www.interviewbit.com/problems/single-number-ii/
 
+int Solution::singleNumber(const vector<int> &A) {
+    int n = A.size();
+    int ones = 0, twos = 0;
+    for(int i = 0; i < n; ++i){
+        int temp = ones;
+        ones = (A[i] ^ temp) & ~twos;
+        twos = (~A[i] & twos & ~temp) | (A[i] & ~twos & temp);
+    }
+    
+    return ones;
+}
+
 // Simple solution
 int Solution::singleNumber(const vector<int> &A) {
 	// First time number appear -> save it in "ones"
