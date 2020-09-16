@@ -1,6 +1,6 @@
 // https://www.interviewbit.com/problems/first-missing-integer/
 
-// Memory limit exceeded
+// Memory limit exceeded // Using hash table
 
 int Solution::firstMissingPositive(vector<int> &A) {
     // int mini = 1;
@@ -55,7 +55,7 @@ int Solution::firstMissingPositive(vector<int> &A) {
     int n = A.size();
     
     for(int i=0;i<A.size();++i){
-        while(A[i]>=0 && A[i]<=n && A[i]!=A[A[i]-1])
+        while(A[i]>0 && A[i]<=n && A[i]!=A[A[i]-1])
             swap(A[i], A[A[i]-1]);
     }
     
