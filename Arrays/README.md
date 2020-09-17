@@ -4,3 +4,6 @@
 * [Next Permutation](https://www.interviewbit.com/problems/next-permutation/) [Explanation](https://leetcode.com/articles/next-permutation/#)
 * [Find Permutation](https://www.interviewbit.com/problems/find-permutation/) [Explanation](https://leetcode.com/articles/find-permutation/#)
 * [First Missing Integer](https://www.interviewbit.com/problems/first-missing-integer/) [Explanation](https://leetcode.com/problems/first-missing-positive/discuss/17071/My-short-c%2B%2B-solution-O(1)-space-and-O(n)-time)
+* [Find Duplicate in Array](https://www.interviewbit.com/problems/find-duplicate-in-array/)
+  [Explanation](https://leetcode.com/problems/find-the-duplicate-number/solution/)
+  
