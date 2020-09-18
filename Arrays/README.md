@@ -13,4 +13,6 @@
 * [Find Duplicate in Array](https://www.interviewbit.com/problems/find-duplicate-in-array/)
   [Explanation](https://leetcode.com/problems/find-the-duplicate-number/solution/)
 * [Rotate Matrix](https://www.interviewbit.com/problems/rotate-matrix/)
-  [Explanation](https://leetcode.com/problems/rotate-image/discuss/18872/A-common-method-to-rotate-the-image)
+  [Explanation 1](https://leetcode.com/problems/rotate-image/discuss/18872/A-common-method-to-rotate-the-image)
+  [Explanation 2](https://stackoverflow.com/a/35438327/7283174)
+  
