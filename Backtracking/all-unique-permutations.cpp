@@ -25,3 +25,27 @@ vector<vector<int> > Solution::permute(vector<int> &A) {
     
     return ans;
 }
+
+// Backtrack solution
+
+void permute_recurse(vector<vector<int>>& ans, vector<int> A, int i){
+    if(i == A.size())
+        ans.push_back(A);
+        
+    else{
+        for(int j = i; j < A.size(); ++j){
+            if(i == j || A[j] != A[i]){
+                swap(A[i], A[j]);
+                permute_recurse(ans, A, i + 1);
+            }
+        }
+    }
+}
+
+vector<vector<int> > Solution::permute(vector<int> &A) {
+    int n = A.size();
+    vector<vector<int>> ans;
+    sort(A.begin(), A.end());
+    permute_recurse(ans, A, 0);
+    return ans;
+}
