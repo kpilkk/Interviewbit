@@ -15,4 +15,8 @@
 * [Rotate Matrix](https://www.interviewbit.com/problems/rotate-matrix/)
   [Explanation 1](https://leetcode.com/problems/rotate-image/discuss/18872/A-common-method-to-rotate-the-image)
   [Explanation 2](https://stackoverflow.com/a/35438327/7283174)
+* [Next Permutation](https://www.interviewbit.com/problems/next-permutation/)
+  [Explanation](https://leetcode.com/problems/next-permutation/solution/)<br>
+  * Next Permutation algorithm can also be used to find permutation of an array iteratively.
+  * [**Johnson Trotter algorithm**](https://www.geeksforgeeks.org/johnson-trotter-algorithm/) can also be used to find permutation of an array iteratively.
   
