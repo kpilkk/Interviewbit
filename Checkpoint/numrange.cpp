@@ -22,3 +22,32 @@ int Solution::numRange(vector<int> &A, int B, int C) {
     
     return rCnt - lCnt;
 }
+
+// Using two pointer
+
+int Solution::numRange(vector<int> &A, int B, int C) {
+    int n = A.size();
+    int i = 0, j = 0, sum = 0, ans = 0;
+    while(i < n){
+        sum += A[j];
+        if(sum >= B && sum <= C){
+            ans++;
+            j++;
+        }
+        else if(sum < B){
+            j++;
+        }
+        else if(sum > C){
+            i++;
+            j = i;
+            sum = 0;
+        }
+        if(j == n){
+            sum = 0;
+            i++;
+            j = i;
+        }
+    }
+        
+    return ans;
+}
