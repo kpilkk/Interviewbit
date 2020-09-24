@@ -51,3 +51,20 @@ int Solution::numRange(vector<int> &A, int B, int C) {
         
     return ans;
 }
+
+// Brute force(Accepted)
+
+int Solution::numRange(vector<int> &A, int B, int C) {
+    int n = A.size(), ans = 0;
+    for(int i = 0; i < n; ++i){
+        int sum = 0;
+        for(int j = i; j < n; ++j){
+            sum += A[j];
+            if(sum >= B && sum <= C)
+                ++ans;
+            if(sum > C)
+                break;
+        }
+    }
+    return ans;
+}
