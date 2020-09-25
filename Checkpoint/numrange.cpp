@@ -1,26 +1,23 @@
 // https://www.interviewbit.com/problems/numrange/
 
+// Using sum less than k problem
 int countLess(vector<int> A, int x){
+    int i = 0, j = 0, sum = 0, count = 0;
     int n = A.size();
-    int i = 0, j = 0, sum = 0, ans = 0;
     
-    while(j < n){
-        sum += A[j];
-        
-        while(i <= j && sum > x){
+    while(j < n && i < n){
+        if(sum + A[j] < x){
+            sum += A[j++];
+            count += (j - i);
+        }
+        else{
             sum -= A[i++];
         }
-        
-        ans += (j - i + 1);
-        j++;
     }
-    return ans;
+    return count;
 }
 int Solution::numRange(vector<int> &A, int B, int C) {
-    int lCnt = countLess(A, B - 1);
-    int rCnt = countLess(A, C);
-    
-    return rCnt - lCnt;
+    return countLess(A, C + 1) - countLess(A, B);
 }
 
 // Using two pointer
