@@ -1,7 +1,6 @@
 // https://www.interviewbit.com/problems/longest-palindromic-substring/
 
 // O(n2) complexity by expanding around centre
-
 string expand(string A, int begin, int end, int n){
     while(begin >= 0 && end <= n - 1 && A[begin] == A[end])
         begin--, end++;
@@ -22,4 +21,40 @@ string Solution::longestPalindrome(string A) {
             longest = temp;
     }
     return longest;
+}
+
+// Manacher's Algorithm
+string Solution::longestPalindrome(string A) {
+    int n = A.length();
+    int len = 2 * n + 1;
+    string temp(len, '#');
+    
+    int k = 1;
+    for(auto i : A){
+        temp[k] = i;
+        k += 2;
+    }
+    
+    vector<int> p(len, 0);
+    int centre = 0, right = 0;
+    int maxCentre = 0, maxLen = 0;
+    for(int i = 0; i < len; ++i){
+        int iMirror = 2 * centre - i;
+        if(right > i)
+            p[i] = min(right - i, p[iMirror]);
+            
+        while(i - p[i] >= 0 && i + p[i] < len && temp[i - p[i] - 1] == temp[i + p[i] + 1])
+            ++p[i];
+        
+        if(p[i] > maxLen){
+            maxLen = p[i];
+            maxCentre = i;
+        }
+        
+        if(i + p[i] > right){
+            centre = i;
+            right = i + p[i];
+        }
+    }
+    return A.substr((maxCentre - maxLen) / 2, maxLen);
 }
