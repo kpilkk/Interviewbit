@@ -4,6 +4,8 @@
 int reverse(int A){
     int rev = 0;
     while(A){
+        if(rev > INT_MAX / 10 || (rev == INT_MAX / 10 && A % 10 > 7)) // when reverse(A) overflows
+            return -1;
         rev = rev*10 + (A%10);
         A /= 10;
     }
@@ -12,8 +14,7 @@ int reverse(int A){
 int Solution::isPalindrome(int A) {
     if(A<0) return 0;
     if(A>=0 && A<=9) return 1;
-    // this program will fail if reversed array overflows
-    
+
     return A == reverse(A);
 }
 
