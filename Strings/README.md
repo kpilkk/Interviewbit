@@ -3,4 +3,5 @@
    * This question can also be solved using [Manacher's Algorithm](https://leetcode.com/problems/longest-palindromic-substring/discuss/872849/manachers-algorithm-with-explanation-on-solution-in-c)
 * [Zigzag String](https://www.interviewbit.com/problems/zigzag-string/)
   [Explanation](https://leetcode.com/problems/zigzag-conversion/discuss/872940/Very-Simple-C%2B%2B-solution-with-explanation)
-  
+* [Atoi](https://www.interviewbit.com/problems/atoi/)
+  [Explanation](https://leetcode.com/problems/string-to-integer-atoi/solution/)
