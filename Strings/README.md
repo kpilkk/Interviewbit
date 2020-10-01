@@ -1,3 +1,6 @@
 * [Longest Palindromic Substring](https://www.interviewbit.com/problems/longest-palindromic-substring/)
   [Explanation O(n2)](https://medium.com/@bhprtk/longest-palindromic-substring-a8190fab03ff)
-   * This question can also be solved using [Manacher's Algorithm](https://www.hackerearth.com/practice/algorithms/string-algorithm/manachars-algorithm/tutorial/)
+   * This question can also be solved using [Manacher's Algorithm](https://leetcode.com/problems/longest-palindromic-substring/discuss/872849/manachers-algorithm-with-explanation-on-solution-in-c)
+* [Zigzag String](https://www.interviewbit.com/problems/zigzag-string/)
+  [Explanation](https://leetcode.com/problems/zigzag-conversion/discuss/872940/Very-Simple-C%2B%2B-solution-with-explanation)
+  
