@@ -4,3 +4,4 @@
       * Solution can be optimized to use O(n) space.
 * [Regular Expression Match](https://www.interviewbit.com/problems/regular-expression-match/)
   [DP solution](https://leetcode.com/problems/wildcard-matching/discuss/370736/Detailed-Intuition-From-Brute-force-to-Bottom-up-DP)
+    * It can be solved in [linear time](https://www.geeksforgeeks.org/dynamic-programming-wildcard-pattern-matching-linear-time-constant-space/).
