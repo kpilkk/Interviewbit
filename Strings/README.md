@@ -5,3 +5,5 @@
   [Explanation](https://leetcode.com/problems/zigzag-conversion/discuss/872940/Very-Simple-C%2B%2B-solution-with-explanation)
 * [Atoi](https://www.interviewbit.com/problems/atoi/)
   [Explanation](https://leetcode.com/problems/string-to-integer-atoi/solution/)
+* [Roman To Integer](https://www.interviewbit.com/problems/roman-to-integer/)
+  [Explanation](https://leetcode.com/problems/roman-to-integer/discuss/886101/very-easy-solution-with-explanation-with-one-loop)
