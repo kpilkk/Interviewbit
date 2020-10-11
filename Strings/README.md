@@ -8,3 +8,6 @@
 * [Roman To Integer](https://www.interviewbit.com/problems/roman-to-integer/)
   [Explanation](https://leetcode.com/problems/roman-to-integer/discuss/886101/very-easy-solution-with-explanation-with-one-loop)
 * [Integer To Roman](https://www.interviewbit.com/problems/integer-to-roman/)
+* [Longest Common Prefix](https://www.interviewbit.com/problems/longest-common-prefix/)
+  [Explanation](https://leetcode.com/problems/longest-common-prefix/solution/)
+  
