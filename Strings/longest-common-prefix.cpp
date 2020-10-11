@@ -13,3 +13,15 @@ string Solution::longestCommonPrefix(vector<string> &A) {
     }
     return ans;
 }
+
+// Vertical Scanning
+string Solution::longestCommonPrefix(vector<string> &A) {
+    if(A.size() == 0) return "";
+    for(int i = 0; i < A[0].length(); ++i){
+        char c = A[0][i];
+        for(int j = 1; j < A.size(); ++j)
+            if(i == A[j].length() || A[j][i] != c)
+                return A[0].substr(0, i);
+    }
+    return A[0];
+}
