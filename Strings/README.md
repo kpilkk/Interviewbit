@@ -10,4 +10,4 @@
 * [Integer To Roman](https://www.interviewbit.com/problems/integer-to-roman/)
 * [Longest Common Prefix](https://www.interviewbit.com/problems/longest-common-prefix/)
   [Explanation](https://leetcode.com/problems/longest-common-prefix/solution/)
-  
+  *  The question can also be solved by sorting the vector and comparing first and last string and returning similar substring.
