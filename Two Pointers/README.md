@@ -2,4 +2,4 @@
   [Explanation](https://www.geeksforgeeks.org/number-subarrays-sum-less-k/)
 * [Container With Most Water](https://www.interviewbit.com/problems/container-with-most-water/)
   [Explanation](https://leetcode.com/problems/container-with-most-water/discuss/6090/Simple-and-fast-C%2B%2BC-with-explanation)
-  
+* [3 Sum Zero](https://www.interviewbit.com/problems/3-sum-zero/)
