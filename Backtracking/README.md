@@ -6,3 +6,7 @@
 * [All Unique Permutations](https://www.interviewbit.com/problems/all-unique-permutations/)
   [Explanation](https://leetcode.com/problems/permutations-ii/discuss/18669/C%2B%2B-backtracking-and-nextPermutation)
   * This question can also be solved using **Next Permutation** iteratively.
+ 
+* [Letter Phone](https://www.interviewbit.com/problems/letter-phone/)
+  [Explanation](https://leetcode.com/problems/letter-combinations-of-a-phone-number/solution/)
+  
