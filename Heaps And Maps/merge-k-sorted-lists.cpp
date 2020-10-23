@@ -1,5 +1,6 @@
 // https://www.interviewbit.com/problems/merge-k-sorted-lists/
 
+// Divide and conquer
 ListNode* mergeTwoLists(ListNode* l1, ListNode* l2){
     if(!l1)
         return l2;
@@ -33,4 +34,32 @@ ListNode* Solution::mergeKLists(vector<ListNode*> &A) {
         n = (n + 1) / 2;
     }
     return A.front();
+}
+
+// Priority Queue
+struct compareNode{
+    bool operator()(ListNode* const &p1, ListNode* const &p2){
+        return p1 -> val > p2 -> val;
+    }
+};
+
+ListNode* Solution::mergeKLists(vector<ListNode*> &A) {
+    priority_queue<ListNode*, vector<ListNode*>, compareNode> q;
+    for(int i = 0; i < A.size(); ++i)
+        if(A[i])
+            q.push(A[i]);
+            
+    ListNode dummy(0);
+    ListNode* ans = &dummy;
+    
+    while(!q.empty()){
+        ans -> next = q.top();
+        q.pop();
+        ans = ans -> next;
+        
+        if(ans -> next)
+            q.push(ans -> next);
+    }
+    
+    return dummy.next;
 }
