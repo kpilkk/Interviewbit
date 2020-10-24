@@ -2,3 +2,5 @@
   [Explanation](https://leetcode.com/problems/linked-list-cycle-ii/discuss/44781/Concise-O(n)-solution-by-using-C%2B%2B-with-Detailed-Alogrithm-Description)
   
 * [Merge Two Sorted Lists](https://www.interviewbit.com/problems/merge-two-sorted-lists/)
+
+* [Swap List Nodes in pairs](https://www.interviewbit.com/problems/swap-list-nodes-in-pairs/)
