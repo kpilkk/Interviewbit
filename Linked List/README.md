@@ -4,3 +4,4 @@
 * [Merge Two Sorted Lists](https://www.interviewbit.com/problems/merge-two-sorted-lists/)
 
 * [Swap List Nodes in pairs](https://www.interviewbit.com/problems/swap-list-nodes-in-pairs/)
+  [My Solution](https://leetcode.com/problems/swap-nodes-in-pairs/discuss/908105/Easy-understand-Iterative-solution)
