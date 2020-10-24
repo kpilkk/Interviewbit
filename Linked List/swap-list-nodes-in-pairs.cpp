@@ -26,3 +26,14 @@ ListNode* Solution::swapPairs(ListNode* A) {
     }
     return dummy.next;
 }
+
+// Recursive solution
+ListNode* Solution::swapPairs(ListNode* A) {
+    if(!A || !A -> next) return A;
+    
+    ListNode* temp = A -> next;
+    A -> next = swapPairs(temp -> next);
+    temp -> next = A;
+    
+    return temp;
+}
