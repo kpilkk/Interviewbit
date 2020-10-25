@@ -14,4 +14,4 @@
     * It has 3 solutions, 2 solutions are explained [here](https://leetcode.com/articles/reverse-linked-list-ii/#) and 3rd solution can be explained using a dummy variable [here](https://leetcode.com/problems/reverse-linked-list-ii/discuss/30668/C%2B%2B-simple)
     
 * [K reverse linked list](https://www.interviewbit.com/problems/k-reverse-linked-list/)
-  *  This question can be solved combining methods of [Reverse Linked List](https://www.interviewbit.com/problems/reverse-linked-list/) and [Reverse Linked List II](https://www.interviewbit.com/problems/reverse-link-list-ii/) as mentioned in my solution.
+  *  This question can be solved combining methods of [Reverse Linked List](https://www.interviewbit.com/problems/reverse-linked-list/) and [Reverse Linked List II](https://www.interviewbit.com/problems/reverse-link-list-ii/) as mentioned in [my solution](https://leetcode.com/problems/reverse-nodes-in-k-group/discuss/909747/Solution-using-known-methods-to-solve-for-Reverse-Linked-List).
