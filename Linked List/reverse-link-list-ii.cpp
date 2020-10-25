@@ -40,3 +40,23 @@ ListNode* Solution::reverseBetween(ListNode* A, int B, int C) {
     
     return A;
 }
+
+// Most elegant solution using linked list 1
+ListNode* Solution::reverseBetween(ListNode* A, int B, int C) {
+    if(B != 1){
+        A -> next = reverseBetween(A -> next, B - 1, C - 1);
+        return A;
+    }
+    else{
+        ListNode *prev = nullptr,*temp = A, *next = nullptr;
+        int count = 0;
+        while(count++ < C){
+            next = A -> next;
+            A -> next = prev;
+            prev = A;
+            A = next;
+        }
+        temp -> next = A;
+        return prev;
+    }
+}
