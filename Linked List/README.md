@@ -12,3 +12,6 @@
 * [Reverse Linked List II](https://www.interviewbit.com/problems/reverse-link-list-ii/)
   [Explanation](https://leetcode.com/problems/reverse-linked-list-ii/discuss/30709/Talk-is-cheap-show-me-the-code-(and-DRAWING))<br/>
     * It has 3 solutions, 2 solutions are explained [here](https://leetcode.com/articles/reverse-linked-list-ii/#) and 3rd solution can be explained using a dummy variable [here](https://leetcode.com/problems/reverse-linked-list-ii/discuss/30668/C%2B%2B-simple)
+    
+* [K reverse linked list](https://www.interviewbit.com/problems/k-reverse-linked-list/)
+  *  This question can be solved combining methods of [Reverse Linked List](https://www.interviewbit.com/problems/reverse-linked-list/) and [Reverse Linked List II](https://www.interviewbit.com/problems/reverse-link-list-ii/) as mentioned in my solution.
