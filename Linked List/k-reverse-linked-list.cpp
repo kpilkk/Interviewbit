@@ -44,3 +44,23 @@ ListNode* Solution::reverseList(ListNode* A, int B) {
     
     return A;
 }
+
+// Recursive solution using the saem function
+ListNode* Solution::reverseList(ListNode* A, int B) {
+    if(B == 1)
+        return A;
+        
+    int count = 0;
+    ListNode *curr = A, *prev = nullptr, *nxt = nullptr;
+    while(count++ < B && curr){
+        nxt = curr -> next;
+        curr -> next = prev;
+        prev = curr;
+        curr = nxt;
+    }
+    
+    if(nxt)
+        A -> next = reverseList(nxt, B);
+        
+    return prev;
+}
