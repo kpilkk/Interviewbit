@@ -7,3 +7,5 @@
     * If negative numbers are included in the problem statement, then mentioned solution will not work.
     * For better problem statemnt and its explanation, one can solve [Leetcode](https://leetcode.com/problems/count-of-range-sum/) question.
     * It can also be solved similar to [Counting Subarrays!](https://www.interviewbit.com/problems/counting-subarrays/) by combining two problems.
+* [SUBTRACT](https://www.interviewbit.com/problems/subtract/)
+    * It can be solved by reversing first half and subtracting by maintaining two pointers and again reversing first half.
