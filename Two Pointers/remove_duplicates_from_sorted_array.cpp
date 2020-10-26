@@ -7,8 +7,8 @@ int Solution::removeDuplicates(vector<int> &A) {
     // Still have a doubt. Checkout www.interviewbit.com/pages/sample_codes/ for more details
     int n = A.size();
     int j = 0, i = 0;
-    while(i<n){
-        while(A[i]==A[i+1] && i<n-1){
+    while(i < n){
+        while(i < n - 1 && A[i] == A[i+1]){
             ++i;
         }
         A[j++] = A[i++];
