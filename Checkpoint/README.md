@@ -9,3 +9,5 @@
     * It can also be solved similar to [Counting Subarrays!](https://www.interviewbit.com/problems/counting-subarrays/) by combining two problems.
 * [SUBTRACT](https://www.interviewbit.com/problems/subtract/)
     * It can be solved by reversing first half and subtracting by maintaining two pointers and again reversing first half.
+* [NEXTGREATER](https://www.interviewbit.com/problems/nextgreater/)
+    * It can be solved using stack.
