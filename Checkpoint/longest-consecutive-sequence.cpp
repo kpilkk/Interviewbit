@@ -5,7 +5,7 @@ int Solution::longestConsecutive(const vector<int> &A) {
     if(n == 0) return 0;
     if(n == 1) return 1;
     
-    set<int> s(A.begin(), A.end());
+    unordered_set<int> s(A.begin(), A.end());
     int ans = 1;
     for(int i = 0; i < n; ++i){
         // INT_MIN and INT_MAX conditions are given for some testcases
