@@ -11,3 +11,7 @@
     * It can be solved by reversing first half and subtracting by maintaining two pointers and again reversing first half.
 * [NEXTGREATER](https://www.interviewbit.com/problems/nextgreater/)
     * It can be solved using stack.
+* [Longest Consecutive Sequence](https://www.interviewbit.com/problems/longest-consecutive-sequence/)
+    * Although Interviewbit does accept some solutions, which doesn't satisfy all test cases. Like,<br>
+    ```2 2147483647 -2147483648 or 2 -2147483647 -2147483648```
+    * i.e. if one of the digit is maximum of integer or minimum of integer.
