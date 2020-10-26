@@ -5,3 +5,4 @@
 * [3 Sum Zero](https://www.interviewbit.com/problems/3-sum-zero/)
 * [3 Sum](https://www.interviewbit.com/problems/3-sum/)
   [Explanation](https://leetcode.com/problems/3sum-closest/solution/)
+* [Remove Duplicates from Sorted Array](https://www.interviewbit.com/problems/remove-duplicates-from-sorted-array/)
