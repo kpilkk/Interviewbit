@@ -1,5 +1,29 @@
 // https://www.interviewbit.com/problems/implement-strstr/
 
+// fastest kmp
+int Solution::strStr(const string A, const string B) {
+    if(B.empty())
+        return -1;
+    
+    string kmp = B + "#" + A;
+    int m = kmp.length(), n = B.length();
+    
+    vector<int> lps(m, 0);
+    for(int i = 1, len = 0; i < m;){
+        if(kmp[i] == kmp[len]){
+            lps[i] = ++len;
+            if(len == n)
+                return i - 2 * n;
+            ++i;
+        }
+        else if(!len)
+            lps[i++] = 0;
+        else
+            len = lps[len - 1];
+    }
+    return -1;
+}
+
 // Brute force
 int Solution::strStr(const string A, const string B) {
     int m = A.length(), n = B.length();
