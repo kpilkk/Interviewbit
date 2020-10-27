@@ -12,3 +12,5 @@
   [Explanation](https://leetcode.com/problems/longest-common-prefix/solution/)
   *  The question can also be solved by sorting the vector and comparing first and last string and returning similar substring.
 * [Implement StrStr](https://www.interviewbit.com/problems/implement-strstr/)
+  *  This question can be solved in O(n) time using [KMP Algorithm](http://jakeboxer.com/blog/2009/12/13/the-knuth-morris-pratt-algorithm-in-my-own-words/).
+  *  [Explanation](https://leetcode.com/problems/implement-strstr/discuss/12956/C%2B%2B-Brute-Force-and-KMP) with code.
