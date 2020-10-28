@@ -5,6 +5,6 @@
   [Explanation 2](https://leetcode.com/problems/single-number-ii/discuss/43294/Challenge-me-thx/176039)
   [Explanation 3](https://leetcode.com/problems/single-number-ii/discuss/43294/Challenge-me-thx/42094)
 
-**Level 5**<br/>
-[Longest Consecutive Sequence](https://www.interviewbit.com/problems/longest-consecutive-sequence/)
-[Explanation](https://leetcode.com/articles/longest-consecutive-sequence/)
+* [Divide Integers](https://www.interviewbit.com/problems/divide-integers/)
+  * For overflow cases, One can consider all the special cases and convert signed to unsigned integers keeping boolean sign variable separate.
+  * One shouldn't use `long` or `long long` for solving the problem.
