@@ -17,3 +17,24 @@ int Solution::longestValidParentheses(string A) {
     }
     return ans;
 }
+
+// Using stack
+int Solution::longestValidParentheses(string A) {
+    int n = A.size();
+    int ans = 0;
+    stack<int> temp;
+    temp.push(-1);
+    
+    for(int i = 0; i < n; ++i){
+        if(A[i] == '(')
+            temp.push(i);
+        else{
+            temp.pop();
+            if(temp.empty())
+                temp.push(i);
+            else
+                ans = max(ans, i - temp.top());
+        }
+    }
+    return ans;
+}
