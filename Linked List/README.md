@@ -15,3 +15,6 @@
     
 * [K reverse linked list](https://www.interviewbit.com/problems/k-reverse-linked-list/)
   *  This question can be solved combining methods of [Reverse Linked List](https://www.interviewbit.com/problems/reverse-linked-list/) and [Reverse Linked List II](https://www.interviewbit.com/problems/reverse-link-list-ii/) as mentioned in [my solution](https://leetcode.com/problems/reverse-nodes-in-k-group/discuss/909747/Solution-using-known-methods-to-solve-for-Reverse-Linked-List).
+* [Insertion Sort List](https://www.interviewbit.com/problems/insertion-sort-list/)
+  [Leetcode Explanation](https://leetcode.com/problems/insertion-sort-list/solution/)
+  [Simple Code Explanation](https://leetcode.com/problems/insertion-sort-list/discuss/46423/Explained-C%2B%2B-solution-(24ms))
