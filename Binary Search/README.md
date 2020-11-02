@@ -4,3 +4,5 @@
 * [Search in Bitonic Array](https://www.interviewbit.com/problems/search-in-bitonic-array/)
 * [Rotated Sorted Array Search](https://www.interviewbit.com/problems/rotated-sorted-array-search/)
 * [Rotated Array](https://www.interviewbit.com/problems/rotated-array/)
+  [Explanation](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/solution/)
+  
