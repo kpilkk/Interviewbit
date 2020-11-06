@@ -2,4 +2,4 @@
 * [Max Depth of Binary Tree](https://www.interviewbit.com/problems/max-depth-of-binary-tree/)
 * [Symmetric Binary Tree](https://www.interviewbit.com/problems/symmetric-binary-tree/)
   [Explanation](https://leetcode.com/problems/symmetric-tree/solution)
-  
+* [Path Sum](https://www.interviewbit.com/problems/path-sum/)
