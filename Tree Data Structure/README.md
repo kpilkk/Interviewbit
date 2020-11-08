@@ -9,4 +9,4 @@
 * [Construct Binary Tree From Inorder And Preorder](https://www.interviewbit.com/problems/construct-binary-tree-from-inorder-and-preorder/)
 * [Binary Tree From Inorder And Postorder](https://www.interviewbit.com/problems/binary-tree-from-inorder-and-postorder/)
   [Explanation](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/discuss/758462/C%2B%2B-Detail-Explain-or-Diagram)
-  
+* [Preorder Traversal](https://www.interviewbit.com/problems/preorder-traversal/)
