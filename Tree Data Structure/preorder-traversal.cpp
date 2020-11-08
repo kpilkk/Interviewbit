@@ -35,3 +35,31 @@ vector<int> Solution::preorderTraversal(TreeNode* A) {
     
     return ans;
 }
+
+// Morris traversal
+vector<int> Solution::preorderTraversal(TreeNode* A) {
+    vector<int> ans;
+    
+    while(A){
+        if(A -> left){
+            TreeNode* pre = A -> left;
+            while(pre -> right && pre -> right != A)
+                pre = pre -> right;
+            if(pre -> right){
+                pre -> right = nullptr;
+                A = A -> right;
+            }
+            else{
+                pre -> right = A;
+                ans.emplace_back(A -> val);
+                A = A -> left;
+            }
+        }
+        else{
+            ans.emplace_back(A -> val);
+            A = A -> right;
+        }
+    }
+    
+    return ans;
+}
