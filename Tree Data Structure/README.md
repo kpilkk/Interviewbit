@@ -10,3 +10,5 @@
 * [Binary Tree From Inorder And Postorder](https://www.interviewbit.com/problems/binary-tree-from-inorder-and-postorder/)
   [Explanation](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/discuss/758462/C%2B%2B-Detail-Explain-or-Diagram)
 * [Preorder Traversal](https://www.interviewbit.com/problems/preorder-traversal/)
+  [Explanation](https://leetcode.com/problems/binary-tree-preorder-traversal/discuss/45466/C%2B%2B-Iterative-Recursive-and-Morris-Traversal)
+  
