@@ -8,3 +8,4 @@
   [Explanation](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/solution/)
 * [Search for a Range](https://www.interviewbit.com/problems/search-for-a-range/)
   [Explanation](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/discuss/14699/Clean-iterative-solution-with-two-binary-searches-(with-explanation))
+* [Sorted Insert Position](https://www.interviewbit.com/problems/sorted-insert-position/)
