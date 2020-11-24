@@ -13,3 +13,4 @@
 * [Generate all Parentheses II](https://www.interviewbit.com/problems/generate-all-parentheses-ii/)
   [Explanation](https://leetcode.com/problems/generate-parentheses/solution/)
   
+* [Sudoku](https://www.interviewbit.com/problems/sudoku/)
