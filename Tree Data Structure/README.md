@@ -13,3 +13,6 @@
   [Explanation](https://leetcode.com/problems/binary-tree-preorder-traversal/discuss/45466/C%2B%2B-Iterative-Recursive-and-Morris-Traversal)
 * [Postorder Traversal](https://www.interviewbit.com/problems/postorder-traversal/)
   [Explanation](https://leetcode.com/problems/binary-tree-postorder-traversal/discuss/45550/C%2B%2B-Iterative-Recursive-and-Morris-Traversal)
+* [Valid BST from Preorder](https://www.interviewbit.com/problems/valid-bst-from-preorder/)
+  [Explanation](https://www.geeksforgeeks.org/check-if-a-given-array-can-represent-preorder-traversal-of-binary-search-tree/)
+  
