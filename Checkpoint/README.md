@@ -15,3 +15,7 @@
     * Although Interviewbit does accept some solutions, which doesn't satisfy all test cases. Like,<br>
     ```2 2147483647 -2147483648 or 2 -2147483647 -2147483648```
     * i.e. if one of the digit is maximum of integer or minimum of integer.
+* [Valid Binary Search Tree](https://www.interviewbit.com/problems/valid-binary-search-tree/)
+  * Recursive solution mentioned in this will not pass all test cases in other platforms such as LeetCode for input with root as 0 and the only right child as -1.
+  * [Better Explanation](https://leetcode.com/problems/validate-binary-search-tree/discuss/959657/C%2B%2B-recursive-solution-passing-all-test-cases)
+  
