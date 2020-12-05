@@ -18,4 +18,4 @@
 * [Valid Binary Search Tree](https://www.interviewbit.com/problems/valid-binary-search-tree/)
   * Recursive solution mentioned in this will not pass all test cases in other platforms such as LeetCode for input with root as 0 and the only right child as -1.
   * [Better Explanation](https://leetcode.com/problems/validate-binary-search-tree/discuss/959657/C%2B%2B-recursive-solution-passing-all-test-cases)
-  
+  * Must [read](https://leetcode.com/problems/validate-binary-search-tree/discuss/32112/Learn-one-iterative-inorder-traversal-apply-it-to-multiple-tree-questions-(Java-Solution)) to solve various problems on Trees.
