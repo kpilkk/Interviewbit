@@ -22,6 +22,7 @@ int Solution::isValidBST(TreeNode* A) {
 }
 
 // Iterative solution using stack
+// Similar to inorder traversal using stack
 int Solution::isValidBST(TreeNode* A) {
     if(!A)
         return true;
