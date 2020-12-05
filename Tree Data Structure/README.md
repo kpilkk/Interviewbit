@@ -15,4 +15,5 @@
   [Explanation](https://leetcode.com/problems/binary-tree-postorder-traversal/discuss/45550/C%2B%2B-Iterative-Recursive-and-Morris-Traversal)
 * [Valid BST from Preorder](https://www.interviewbit.com/problems/valid-bst-from-preorder/)
   [Explanation](https://www.geeksforgeeks.org/check-if-a-given-array-can-represent-preorder-traversal-of-binary-search-tree/)
+* [Kth Smallest Element In Tree](https://www.interviewbit.com/problems/kth-smallest-element-in-tree/)
   
