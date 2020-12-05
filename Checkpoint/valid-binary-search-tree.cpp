@@ -20,3 +20,24 @@ bool helper(TreeNode* A, int lower, int upper){
 int Solution::isValidBST(TreeNode* A) {
     return helper(A, NULL, NULL);
 }
+
+// Iterative solution using stack
+int Solution::isValidBST(TreeNode* A) {
+    if(!A)
+        return true;
+    stack<TreeNode*> stack;
+    TreeNode* pre = nullptr;
+    while(A || !stack.empty()){
+        while(A){
+            stack.emplace(A);
+            A = A -> left;
+        }
+        A = stack.top();
+        stack.pop();
+        if(pre && A -> val <= pre -> val)
+            return false;
+        pre = A;
+        A = A -> right;
+    }
+    return true;
+}
