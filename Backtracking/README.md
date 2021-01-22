@@ -14,3 +14,5 @@
   [Explanation](https://leetcode.com/problems/generate-parentheses/solution/)
   
 * [Sudoku](https://www.interviewbit.com/problems/sudoku/)
+* [NQueens](https://www.interviewbit.com/problems/nqueens/)
+  [Explanation](https://leetcode.com/problems/n-queens/solution/)
